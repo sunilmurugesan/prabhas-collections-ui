@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "prabhas-collections-ui"
+    }
+  },
+  "defaultProject": "prabhas-collections-ui",
+  "cli": {
+    "analytics": "576655a2-49e9-46d7-9201-a81ebb0024e5"
+  }
 }
