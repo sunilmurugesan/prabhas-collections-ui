@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductCategoryComponent } from './product/product-category/product-category.component';
+import { ProductCategoryComponent } from './product/product-category.component';
 
 @NgModule({
   declarations: [
