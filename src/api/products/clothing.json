@@ -1,0 +1,29 @@
+[
+  {
+    "id": "CLO-001",
+    "name": "Sarees",
+    "category": "CLOTHING",
+    "subCategory": "SAREE",
+    "description": "Saree",
+    "price": 17.50,
+    "imageUrl": "./assets/images/saree.jpg"
+  },
+  {
+    "id": "CLO-002",
+    "name": "Kurtis",
+    "category": "CLOTHING",
+    "subCategory": "KURTIS",
+    "description": "Kurtis",
+    "price": 21.00,
+    "imageUrl": "./assets/images/kurti.jpg"
+  },
+  {
+    "id": "CLO-003",
+    "name": "Blouse",
+    "category": "CLOTHING",
+    "subCategory": "BLOUSE",
+    "description": "Blouse",
+    "price": 5.00,
+    "imageUrl": "./assets/images/blouse.jpg"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "JEW-001",
+    "name": "Earring",
+    "category": "JEWEL",
+    "subCategory": "EARRING",
+    "description": "Gold plated Earring",
+    "price": 17.50,
+    "imageUrl": "./assets/images/earring.jpg"
+  },
+  {
+    "id": "JEW-002",
+    "name": "Necklace",
+    "category": "JEWEL",
+    "subCategory": "NECKLACE",
+    "description": "Gold plated Necklace",
+    "price": 21.00,
+    "imageUrl": "./assets/images/necklace.jpg"
+  },
+  {
+    "id": "JEW-003",
+    "name": "Bangle",
+    "category": "JEWEL",
+    "subCategory": "BANGLE",
+    "description": "Silver plated Bangle",
+    "price": 5.00,
+    "imageUrl": "./assets/images/bangles.jpg"
+  },
+  {
+    "id": "JEW-004",
+    "name": "Ring",
+    "category": "JEWEL",
+    "subCategory": "RING",
+    "description": "Gold plated Ring",
+    "price": 5.00,
+    "imageUrl": "./assets/images/ring.jpg"
+  },
+  {
+    "id": "JEW-005",
+    "name": "Sapphire Ring",
+    "category": "JEWEL",
+    "subCategory": "RING",
+    "description": "Sapphire Ring",
+    "price": 5.00,
+    "imageUrl": "./assets/images/ring.jpg"
+  }
+]
