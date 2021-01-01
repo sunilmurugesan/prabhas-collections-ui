@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ProductService} from './product.service';
-import {Product} from './product';
+import {ProductService} from '../product.service';
+import {Product} from '../product';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -18,15 +18,18 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const param = this.route.snapshot.paramMap.get('category');
-    console.log(param);
-    if (param) {
-      const category = param;
-      this.productService.getProducts(category).subscribe({
-        next: products => this.products = products,
-        error: err => this.errorMessage = err
-      });
-    }
+    this.route.paramMap.subscribe({
+      next: param => {
+        const category = param.get('category');
+        this.getProducts(category);
+      }
+    });
+  }
 
+  getProducts(category: string): void {
+    this.productService.getProducts(category).subscribe({
+      next: products => this.products = products,
+      error: err => this.errorMessage = err
+    });
   }
 }
