@@ -1,10 +1,9 @@
 <div class="row row-cols-1 row-cols-md-3 text-center pt-4" *ngIf="products && products.length">
   <div class="col" *ngFor="let product of products">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title"></h1>
+    <div class="card mb-4">
+      <div class="card-body embed-responsive embed-responsive-4by3">
         <a [routerLink]="['/product', product.id]">
-          <img [src]="product.imageUrl" width="150px" height="200px"/>
+          <img [src]="product.imageUrl" class="card-img-top embed-responsive-item"/>
         </a>
         <!--        <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="product-list.html">Order-->
         <!--          Now</a>-->

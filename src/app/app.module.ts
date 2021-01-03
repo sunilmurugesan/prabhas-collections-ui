@@ -1,12 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ProductCategoryComponent } from './product/product-category/product-category.component';
-import { ProductListComponent } from './product/product-list/product-list.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {ProductCategoryComponent} from './product/product-category/product-category.component';
+import {ProductListComponent} from './product/product-list/product-list.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+import {ProductDetailComponent} from './product/product-detail/product-detail.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,12 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

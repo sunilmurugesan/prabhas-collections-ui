@@ -6,7 +6,7 @@
     "subCategory": "EARRING",
     "description": "Gold plated Earring",
     "price": 17.50,
-    "imageUrl": "./assets/images/earring.jpg"
+    "imageUrl": "./assets/images/pc-earring.jpg"
   },
   {
     "id": "JEW-002",
@@ -15,7 +15,7 @@
     "subCategory": "NECKLACE",
     "description": "Gold plated Necklace",
     "price": 21.00,
-    "imageUrl": "./assets/images/necklace.jpg"
+    "imageUrl": "./assets/images/pc-necklace.jpg"
   },
   {
     "id": "JEW-003",
@@ -24,24 +24,24 @@
     "subCategory": "BANGLE",
     "description": "Silver plated Bangle",
     "price": 5.00,
-    "imageUrl": "./assets/images/bangles.jpg"
+    "imageUrl": "./assets/images/pc-bead-bangles.jpg"
   },
   {
     "id": "JEW-004",
-    "name": "Ring",
+    "name": "Earring",
     "category": "JEWEL",
-    "subCategory": "RING",
-    "description": "Gold plated Ring",
+    "subCategory": "EARRING",
+    "description": "Silver plated Earring",
     "price": 5.00,
-    "imageUrl": "./assets/images/ring.jpg"
+    "imageUrl": "./assets/images/pc-silver-plated-earring.jpg"
   },
   {
     "id": "JEW-005",
-    "name": "Sapphire Ring",
+    "name": "Ruby Earring",
     "category": "JEWEL",
-    "subCategory": "RING",
-    "description": "Sapphire Ring",
+    "subCategory": "EARRING",
+    "description": "Ruby Earring",
     "price": 5.00,
-    "imageUrl": "./assets/images/ring.jpg"
+    "imageUrl": "./assets/images/pc-ruby-earring.jpg"
   }
 ]

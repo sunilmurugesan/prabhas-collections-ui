@@ -9,8 +9,60 @@
       <div class="mdb-lightbox">
 
         <div class="row product-gallery mx-1">
-
           <div class="col-12 mb-0">
+            <ngb-carousel #productCarousel>
+              <ng-template ngbSlide id="slideOne">
+                <figure class="figure">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                       class="figure-img img-fluid rounded"
+                       alt="A generic square placeholder image with rounded corners in a figure.">
+                  <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+              </ng-template>
+              <ng-template ngbSlide id="slideTwo">
+                <figure class="figure">
+                  <img src="./assets/images/pc-necklace.jpg"
+                       class="figure-img img-fluid rounded"
+                       alt="A generic square placeholder image with rounded corners in a figure.">
+                </figure>
+              </ng-template>
+              <ng-template ngbSlide id="slideThree">
+                <video class="video-fluid" id="123" controls muted>
+                  <source src="./assets/video.mp4" poster="assets/images/earing.png" type="video/mp4">
+                </video>
+
+                <!--<figure class="figure">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
+                       class="figure-img img-fluid rounded"
+                       alt="A generic square placeholder image with rounded corners in a figure.">
+
+                </figure>-->
+              </ng-template>
+            </ngb-carousel>
+            <!--
+            <figure class="figure">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                   class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                   class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                   class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                   class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+            -->
+
+            <!--
             <figure class="view overlay rounded z-depth-1 main-img">
               <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
                  data-size="710x823">
@@ -18,7 +70,6 @@
                      class="img-fluid z-depth-1 rounded">
               </a>
             </figure>
-            <!--
             <figure class="view overlay rounded z-depth-1" style="visibility: hidden;">
               <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
                  data-size="710x823">
@@ -46,22 +97,28 @@
             <div class="row">
               <div class="col-3">
                 <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
-                       class="img-fluid">
+                  <a (click)="goToSlide('slideTwo')">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
+                         class="img-fluid">
+                  </a>
                   <div class="mask rgba-white-slight"></div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
-                       class="img-fluid">
+                  <a (click)="goToSlide('slideThree')">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
+                         class="img-fluid">
+                  </a>
                   <div class="mask rgba-white-slight"></div>
                 </div>
               </div>
               <div class="col-3">
                 <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
-                       class="img-fluid">
+                  <a (click)="goToSlide('slideOne')">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
+                         class="img-fluid">
+                  </a>
                   <div class="mask rgba-white-slight"></div>
                 </div>
               </div>
@@ -150,7 +207,8 @@
       </div>
       <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
       <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
-        class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+        class="fas fa-shopping-cart pr-2"></i>Add to cart
+      </button>
     </div>
   </div>
 
@@ -162,13 +220,16 @@
 
   <ul class="nav tabs-primary nav-justified" id="advancedTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active show" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+      <a class="nav-link active show" id="description-tab" data-toggle="tab" href="#description" role="tab"
+         aria-controls="description" aria-selected="true">Description</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Information</a>
+      <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
+         aria-selected="false">Information</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (1)</a>
+      <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
+         aria-selected="false">Reviews (1)</a>
     </li>
   </ul>
   <div class="tab-content" id="advancedTabContent">
@@ -200,7 +261,8 @@
     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
       <h5><span>1</span> review for <span>Fantasy T-shirt</span></h5>
       <div class="media mt-3 mb-4">
-        <img class="d-flex mr-3 z-depth-1" src="https://mdbootstrap.com/img/Photos/Others/placeholder1.jpg" width="62" alt="Generic placeholder image">
+        <img class="d-flex mr-3 z-depth-1" src="https://mdbootstrap.com/img/Photos/Others/placeholder1.jpg" width="62"
+             alt="Generic placeholder image">
         <div class="media-body">
           <div class="d-sm-flex justify-content-between">
             <p class="mt-1 mb-2">
@@ -301,10 +363,12 @@
       <div class="">
 
         <div class="view zoom overlay z-depth-2 rounded">
-          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
+          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
+               alt="Sample">
           <a href="#!">
             <div class="mask waves-effect waves-light">
-              <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg">
+              <img class="img-fluid w-100"
+                   src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg">
               <div class="mask rgba-black-slight waves-effect waves-light"></div>
             </div>
           </a>
@@ -330,10 +394,12 @@
       <div class="">
 
         <div class="view zoom overlay z-depth-2 rounded">
-          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" alt="Sample">
+          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
+               alt="Sample">
           <a href="#!">
             <div class="mask waves-effect waves-light">
-              <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+              <img class="img-fluid w-100"
+                   src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
               <div class="mask rgba-black-slight waves-effect waves-light"></div>
             </div>
           </a>
@@ -359,11 +425,13 @@
       <div class="">
 
         <div class="view zoom overlay z-depth-2 rounded">
-          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg" alt="Sample">
+          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
+               alt="Sample">
           <h4 class="mb-0"><span class="badge badge-primary badge-pill badge-news">Sale</span></h4>
           <a href="#!">
             <div class="mask waves-effect waves-light">
-              <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
+              <img class="img-fluid w-100"
+                   src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
               <div class="mask rgba-black-slight waves-effect waves-light"></div>
             </div>
           </a>
@@ -372,7 +440,8 @@
         <div class="pt-4">
 
           <h5>Grey sweater</h5>
-          <p><span class="text-danger mr-1"><strong>$21.99</strong></span><span class="text-grey"><strong><s>$36.99</s></strong></span></p>
+          <p><span class="text-danger mr-1"><strong>$21.99</strong></span><span class="text-grey"><strong><s>$36.99</s></strong></span>
+          </p>
 
         </div>
 
@@ -389,10 +458,12 @@
       <div class="">
 
         <div class="view zoom overlay z-depth-2 rounded">
-          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" alt="Sample">
+          <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+               alt="Sample">
           <a href="#!">
             <div class="mask waves-effect waves-light">
-              <img class="img-fluid w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
+              <img class="img-fluid w-100"
+                   src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
               <div class="mask rgba-black-slight waves-effect waves-light"></div>
             </div>
           </a>
