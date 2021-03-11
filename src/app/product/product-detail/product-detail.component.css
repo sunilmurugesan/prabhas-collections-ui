@@ -1,0 +1,18 @@
+::ng-deep .ngxImageZoomContainer > img {
+  max-height: 450px!important;
+  /*max-width:100%!important;*/
+  /*height:auto!important;*/
+}
+
+.ngxImageZoomContainer {
+  display:inline-block;
+  height: 100%;
+  margin: 0 0 1px;
+}
+
+.ngxImageZoomThumbnail {
+  margin-bottom:.5rem;
+  line-height:1;
+  max-width:100%;
+  height:auto;
+}

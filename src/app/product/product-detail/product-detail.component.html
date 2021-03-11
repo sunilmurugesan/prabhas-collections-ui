@@ -12,19 +12,27 @@
           <div class="col-12 mb-0">
             <ngb-carousel #productCarousel>
               <ng-template ngbSlide id="slideOne">
-                <figure class="figure">
-                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
-                       class="figure-img img-fluid rounded"
-                       alt="A generic square placeholder image with rounded corners in a figure.">
-                  <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
+                <lib-ngx-image-zoom
+                  thumbImage="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg"
+                  fullImage="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg">
+                </lib-ngx-image-zoom>
+
               </ng-template>
               <ng-template ngbSlide id="slideTwo">
+
+                <lib-ngx-image-zoom
+                  thumbImage="./assets/images/pc-necklace.jpg"
+                  fullImage="./assets/images/pc-necklace.jpg">
+                </lib-ngx-image-zoom>
+
+<!--
                 <figure class="figure">
                   <img src="./assets/images/pc-necklace.jpg"
                        class="figure-img img-fluid rounded"
                        alt="A generic square placeholder image with rounded corners in a figure.">
                 </figure>
+-->
+
               </ng-template>
               <ng-template ngbSlide id="slideThree">
                 <video class="video-fluid" id="123" controls muted>
