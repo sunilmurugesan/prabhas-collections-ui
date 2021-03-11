@@ -1,0 +1,25 @@
+{
+  "id": "JEW-001",
+  "name": "Earring",
+  "category": "JEWEL",
+  "subCategory": "EARRING",
+  "description": "Gold plated Earring",
+  "price": 17.50,
+  "contents": [
+    {
+      "fileUrl": "./assets/images/pc-earring.jpg",
+      "order": 1,
+      "fileType": "image"
+    },
+    {
+      "fileUrl": "./assets/images/pc-silver-plated-earring.jpg",
+      "order": 2,
+      "fileType": "image"
+    },
+    {
+      "fileUrl": "./assets/images/pc-ruby-earring.jpg",
+      "order": 3,
+      "fileType": "image"
+    }
+  ]
+}
